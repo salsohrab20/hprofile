@@ -1,0 +1,10 @@
+name: HProfileActions
+on: workflow_dispatch
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Workflow
+        run: echo "Workflow works!"
+    
+    
