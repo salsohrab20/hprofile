@@ -1,11 +1,11 @@
 name: HProfileActions
-on: workflow_dispatch
+on: [push,workflow_dispatch]
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: pro-app-actions
   ECS_SERVICE: vpro-app-act-tdef-service-c8wr47js
   ECS_CLUSTER: vpro-app-act-2
-  ECS_TASK_DEFINITION: awsfiles/taskdeffile.json
+  ECS_TASK_DEFINITION: aws-files/taskdeffile.json
   CONTAINER_NAME: vproapp
 jobs:
   Testing:
